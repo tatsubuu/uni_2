@@ -1,0 +1,131 @@
+.main-contents{
+    padding-top:180px;
+    height: 400px;
+}
+
+.thred{ 
+    width: 180px;
+    height: 50px;
+    display: block;
+    padding: 20px 90px;
+    margin: 0 auto;
+    border: 2px solid #b3aeb5;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.thred:hover{
+    box-shadow: 2px 2px 4px #b7b7b7;
+}
+
+.room{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 20px;
+}
+
+.thred p{
+    position: absolute;
+    top: 40px;
+    text-align: center;
+}
+
+/* lessons/:id/show*/
+
+.top{
+    padding-top: 120px;
+}
+
+.class-title{
+    color: #b3aeb5;
+    padding-left: 60px;
+    border-bottom: 2px solid #b3aeb5;
+}
+
+.overview{
+    height: 200px;
+    border-bottom:  1px solid #b3aeb5;
+}
+
+.review{
+    display: flex;
+    padding: 40px 40px;
+}
+
+.contents{
+    margin: 40px;
+    width: 150px;
+    height: 180px;
+    border: 2px solid #b3aeb5;
+    border-radius: 15px;
+}
+
+.star{
+    border-bottom:  1px solid #b3aeb5;
+}
+
+.coment{
+    border-bottom:  1px solid #b3aeb5;
+    height: 120px;
+}
+
+.contents:hover{
+    box-shadow: 2px 2px 4px #b7b7b7;
+}
+
+
+
+.top{
+    padding-top: 120px;
+}
+
+.class-title{
+    color: #b3aeb5;
+    padding-left: 60px;
+    border-bottom: 2px solid #b3aeb5;
+}
+
+.overview{
+    height: 200px;
+    border-bottom:  1px solid #b3aeb5;
+    color: #b3aeb5;
+}
+
+.review{
+    padding: 40px 40px;
+}
+
+.contents{
+    margin: 40px;
+    width: 150px;
+    height: 180px;
+    border: 2px solid #b3aeb5;
+    border-radius: 15px;
+}
+
+.star{
+    border-bottom:  1px solid #b3aeb5;
+}
+
+.coment{
+    border-bottom:  1px solid #b3aeb5;
+    height: 120px;
+}
+
+.contents:hover{
+    box-shadow: 2px 2px 4px #b7b7b7;
+}
+
+.r-btn{
+    
+    display: inline-block;
+    line-height: 50px;
+    height: 50px;
+    width: 100px;
+    background-color: rgba(38,208,201,0.7);
+    border: 2px solid #b7b7b7;
+    border-radius: 4px;
+    box-shadow: 3px 3px #b7b7b7;
+}

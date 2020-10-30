@@ -1,0 +1,75 @@
+
+
+.review-title{
+    padding-top: 120px;
+    padding-bottom:  40px;
+    padding-left: 40px;
+    color: #b3aeb5;
+}
+
+.review-all{
+    border: 2px solid #b3aeb5;
+    height: 300px;
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.review-star{
+    border-bottom: 2px solid #b3aeb5;
+    line-height: 40px;
+}
+
+.review-content{
+    border-bottom: 2px solid #b3aeb5;
+    line-height: 220px;
+}
+
+.review-owner{
+    line-height: 40px;
+}
+
+
+/* posts/new */
+
+.main-new{
+    padding-top: 200px;
+    height: 560px;
+}
+
+.main-new h2{
+    text-align: center;
+}
+
+.review-form {
+    position: relative;
+    margin: 0 auto;
+    width: 260px;
+    height: 300px;
+    border: 2px solid #b3aeb5; 
+}
+
+
+.review-form textarea{
+      resize: none;
+    margin: 10% 15%;
+    height: 60%;
+    width: 70%;
+    text-align: center;
+    border: 2px solid #b3aeb5;
+    font-size: 30px;
+    
+}
+
+.btn{
+    
+    text-align: center;
+}
+
+.btn input{
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: rgb(38,208,201,);
+    color:white;
+}

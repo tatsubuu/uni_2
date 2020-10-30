@@ -1,0 +1,11 @@
+<div class="main users-index">
+    <h1 class="users-heading">
+    Users</h1>
+    
+    <% @user.each do |user| %>
+        <div class="users-index-item">
+             <%= link_to(user.name,"/users/#{user.id}") %>
+            
+        </div>
+   <% end %>
+</div>

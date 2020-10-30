@@ -1,0 +1,16 @@
+<body>
+    <div class="main-contents">
+        <% @lessons.each do |lesson| %>
+        
+            <div class="thred">
+                <div class="room">
+                    <%=  link_to(lesson.lesson_name,"/lessons/#{lesson.id}") %>
+                    
+                </div>
+            </div>
+        <% end %>
+
+        
+        
+    </div>
+</body>

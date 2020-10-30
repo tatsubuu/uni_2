@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Uni2</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+    
+     <header>
+          <div class="container">
+            <div class="header-left">
+            <h1 class="header-logo">Uni<span>.</span></h1>
+            </div>
+            <div class="header-right">
+               <% if session[:user_id] %>
+                    <% current_user = User.find_by(id: session[:user_id]) %>
+                    <%= link_to("マイページ","/users/#{current_user.id}") %>
+                    <%= link_to("ログアウト","/logout",{method: :post}) %>
+                    <%= link_to("ユーザー一覧","/users/index") %>
+                    <%= link_to("授業一覧","/lessons/index") %>
+                <% else %>
+                    <%= link_to("ログイン","/login") %>
+                    <%= link_to("トップページ","/top") %>
+                    <%= link_to("新規登録","/users/signup") %>
+                <% end %>
+            </div>
+          </div>
+      </header>
+
+  <body>
+       <% if flash[:notice]%>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+    <%= yield %>
+  </body>
+              <footer>
+            <div class="footer-left">
+                <h2>Uni<span>.</span></h2>
+                <p>&copy; 2020 株式会社Uni.</p>
+            </div>
+            <div class="footer-right">
+            
+            </div>
+            
+        </footer>
+</html>
+ 
+
+    
+
+

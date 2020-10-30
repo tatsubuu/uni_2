@@ -1,0 +1,32 @@
+<div class="top">
+    <div class="class-title">
+        <h2><%= @lesson.lesson_name %></h2>
+    </div>
+    <div class="overview">
+    <p>授業概要</p>
+        文法、長文読解がメイン。授業形式は講義型で出席点2割、残りは期末テストで評価される。
+    </div>
+</div>
+
+<div class="r-btn">
+    <%= link_to("レビューする","/posts/#{@lesson.id}/new") %>
+</div>
+<div class="review">
+  <% @post.each do |post| %>
+    <%= link_to("/posts/#{post.id}") do %>
+            <div class="contents">
+                <div class="star">
+                       
+                </div>
+                <div class="coment">
+                    <%= post.content %>
+                </div>
+                <div class="name">
+                    <%= post.user.name %>
+                </div>
+            </div>
+        <% end %>
+    
+    <% end %>
+   
+</div>

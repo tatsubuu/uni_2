@@ -1,0 +1,25 @@
+<div class="review-title">
+    <h2>レビュー詳細フォーム</h2>
+</div>
+
+<div class="review-all">
+    <div class="review-star">
+        <% if Like.find_by(user_id: @current_user.id,post_id: @post.id) %>
+            <%= link_to("いいね！済み","/likes/#{@post.id}/destroy",{method:"post"}) %>
+        <% else %>
+            <%= link_to("いいね！","/likes/#{@post.id}/create",{method:"post"}) %>
+        <% end %>
+        
+    </div>
+    <div class="review-content">
+        <%= @post.content %>
+    </div>
+    <div class="review-owner">
+        <%= link_to(@user.name,"/users/#{@user.id}") %>
+    </div>
+    
+    <%= link_to("編集","/posts/#{@post.id}/edit") %>
+    <%= link_to("削除","/posts/#{@post.id}/destroy",{method:"post"}) %>
+    
+    
+</div>

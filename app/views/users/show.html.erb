@@ -1,0 +1,29 @@
+<div class="show-item">
+    
+     <img src="<%="/user_images/#{@user.image_name}"%>">
+   
+
+    
+    <div class="name">
+        <%= @user.name %>
+    </div>
+
+    <div class="email">
+        <%= @user.email %>
+    </div>
+
+    
+    <div class="edit">
+        
+        <%= link_to("編集","/users/#{@user.id}/edit") %>
+        <%= link_to("削除","/users/#{@user.id}/destroy",{method: "post"}) %>
+            
+        
+        
+    </div>
+    
+    <div class="posts-index">
+        
+    </div>
+   
+</div>

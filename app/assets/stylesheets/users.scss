@@ -1,0 +1,104 @@
+/* user/index */
+
+.users-heading{
+    margin-top: 200px;
+    margin-left: 60px;
+    font-size: 48px;
+    color: #bcc8d4;
+}
+
+.users-index-item{
+    text-align: center;
+    margin: 0 auto;
+    width: 550px;
+    padding: 20px 30px;
+    box-shadow: 0 2px 6px #c1ced7;
+    background-color: white;
+}
+
+.users-index-item:hover{
+    background-color: #e6e6e6;
+    transition: 0.3s;
+}
+
+.users-index-item img{
+    width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  box-shadow: 0 2px 6px #c1ced7;
+  object-fit: cover;
+}
+
+/* user/show */
+
+.show-item{
+    padding-top:200px;
+    text-align: center;
+}
+
+.name{
+    font-size:32px
+}
+
+.show-item img{
+    width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  box-shadow: 0 2px 6px #c1ced7;
+  object-fit: cover;
+}
+
+.posts-index{
+    text-align: center;
+    margin: 0 auto;
+    width: 550px;
+    padding: 20px 30px;
+    box-shadow: 0 2px 6px #c1ced7;
+    background-color: white;
+}
+
+.posts-index:hover{
+    background-color: #e6e6e6;
+    transition: 0.3s;
+}
+
+/* user/signup */
+
+.form2{
+    margin: 0 auto;
+    height:300px;
+    width:600px;
+    border:2px solid #e6e6e6;
+    margin-bottom: 20px
+}
+
+.user-name{
+    text-align: center;
+    padding-top: 20px
+}
+
+.email{
+    padding:6px 200px;
+}
+
+.form2 input{
+    background-color: #e6e6e6;
+    width: 250px;
+    outline:none;
+}
+
+.btn new{
+    margin-top: 20px;
+}
+
+/* login */
+
+.error_message{
+    text-align: center;
+    color:white;
+    background-color: red;
+}
+
+.pass{
+    text-align: center;
+}

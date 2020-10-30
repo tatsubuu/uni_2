@@ -1,0 +1,13 @@
+<div class="main-new">
+    <h2>Review</h2>
+        <%= form_tag("/posts/#{@lesson.id}/create") do %>
+            <div class="review-form">
+                <textarea name="content">
+                    
+                </textarea>
+                <div class="btn">
+                    <input type="submit" value="投稿">
+                </div>
+            </div>
+        <% end %>
+</div>
