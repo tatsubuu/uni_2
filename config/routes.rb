@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+    
+    root "top" => "home#top"
+    
     get 'users/index' => "users#index"
     get "users/signup" => "users#new"
     get "login" => "users#login_form"
