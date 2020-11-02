@@ -1,7 +1,9 @@
 <body>
     
     <div class="main-contents">
-        <%= link_to("授業を追加","/lessons/new") %>
+        <div class="add_lesson">
+            <%= link_to("授業を追加","/lessons/new") %>
+        </div>
         <% @lessons.each do |lesson| %>
         
             <div class="thred">
