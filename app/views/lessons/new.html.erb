@@ -1,0 +1,26 @@
+<div class="review-title">
+    <h2>新しい授業を追加</h2>
+</div>
+
+<div class="lesson_all">
+    
+    <%= form_tag("/lessons/create") do %>
+        <div class="lesson_name">
+            <h3>授業名</h3>
+            <input class="name_input"  name="lesson_name" type="text" >
+        
+        </div>
+        <div class="lesson_content">
+            <h3>授業概要</h3>
+            <textarea class="content_text" name="lesson_dcp"></textarea>
+        </div>
+        <input class="lesson_btn" type="submit" value="授業を追加">
+    <% end %>
+    <div class="ex">
+            記入例）この授業の授業形式は講義型で、授業毎にレジュメが配られ、それをもとに進めていく。グループワークなどはなく、出席点２割、残り８割は期末テストで成績がつく。
+        </div>
+    
+   
+    
+    
+</div>

@@ -17,7 +17,10 @@ Rails.application.routes.draw do
     post "users/:id/destroy" => "users#destroy"
     
     get 'lessons/index' => "lessons#index"
+    get "lessons/new" => "lessons#new"
     get "lessons/:id" => "lessons#show"
+    
+    post "lessons/create" => "lessons#create"
     
     
     get "posts/:id/edit" => "posts#edit"

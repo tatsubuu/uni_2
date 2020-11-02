@@ -129,3 +129,54 @@
     border-radius: 4px;
     box-shadow: 3px 3px #b7b7b7;
 }
+
+.lesson_all{
+    position: relative;
+    border: 2px solid #b3aeb5;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    
+}
+
+.lesson_name h3{
+    position: absolute;
+    border-bottom: 3px solid #b3aeb5;
+    top: 20px;
+    left: 40px;
+}
+
+.lesson_content h3{
+    position: absolute;
+    border-bottom: 3px solid #b3aeb5;
+    top: 90px;
+    left: 40px;
+}
+
+.name_input{
+    position: absolute;
+    height: 30px;
+    width: 250px;
+    top: 40px;
+    left: 150px;
+}
+
+.content_text{
+    position: absolute;
+    height: 150px;
+    width: 300px;
+    top: 150px;
+    left: 150px;
+}
+
+.ex{
+    position: absolute;
+    color: #b3aeb5;
+    top: 400px;
+}
+
+.lesson_btn{
+    position: absolute;
+    top: 330px;
+    left: 250px;
+}
