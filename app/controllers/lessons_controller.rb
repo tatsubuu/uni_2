@@ -19,4 +19,12 @@ class LessonsController < ApplicationController
         @lesson.save
         redirect_to("/lessons/index")
     end
+    
+    def destroy
+        @lesson = Lesson.find_by(id: params[:id])
+        if @lesson.destroy
+            flash[:notice] ="授業を削除しました"
+            redirect_to("/lessons/index")
+        end
+    end
 end

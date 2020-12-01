@@ -20,8 +20,9 @@ Rails.application.routes.draw do
     get "lessons/new" => "lessons#new"
     get "lessons/:id" => "lessons#show"
     
-    post "lessons/create" => "lessons#create"
     
+    post "lessons/create" => "lessons#create"
+    post "lessons/:id/destroy" => "lessons#destroy"
     
     get "posts/:id/edit" => "posts#edit"
     get "posts/:id/new" => "posts#new"
