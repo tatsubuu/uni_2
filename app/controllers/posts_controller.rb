@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
     
+    before_action :ensure_correct_user,{only: [:edit,:update,:destroy]}
     def show
         @post = Post.find_by(id: params[:id])
         #ユーザー情報を表示するために該当するユーザー情報をインスタンスメゾットを用いて取得
@@ -45,6 +46,14 @@ class PostsController < ApplicationController
         if @post.destroy
             flash[:notice] ="投稿を削除しました"
             redirect_to("/lessons/index")
+        end
+    end
+    
+    def ensure_correct_user
+        @post = Post.find_by(id: params[:id])
+        if @post.user_id != @current_user.id
+            flash[:notice] = "権限がありません"
+            redirect_to("/posts/index")
         end
     end
 end

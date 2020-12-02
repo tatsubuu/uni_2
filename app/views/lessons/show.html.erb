@@ -10,7 +10,7 @@
 
 <div class="r-btn">
     <%= link_to("レビューする","/posts/#{@lesson.id}/new") %>
-    <%= link_to("授業を削除する","/lessons/#{@lesson.id}/destroy",{method:"post"}) %>
+    <!--<%= link_to("授業を削除する","/lessons/#{@lesson.id}/destroy",{method:"post"}) %> -->
 </div>
 <div class="review">
   <% @post.each do |post| %>
