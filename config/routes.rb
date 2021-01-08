@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
     
+    
     root to: "home#top" 
+    
+    post "courses/:lesson_id/create" => "courses#create"
+    post "courses/:lesson_id/destroy" => "course#destroy"
     
     get 'users/index' => "users#index"
     get "users/signup" => "users#new"

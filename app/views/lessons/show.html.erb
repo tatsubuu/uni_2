@@ -11,6 +11,11 @@
 <div class="r-btn">
     <%= link_to("レビューする","/posts/#{@lesson.id}/new") %>
     <!--<%= link_to("授業を削除する","/lessons/#{@lesson.id}/destroy",{method:"post"}) %> -->
+    <% if Course.find_by(user_id:@current_user.id,lesson_id:@lesson.id) %>
+        <%= link_to("履修","/couses/#{@lesson.id}/destroy",{method:"post"}) %>
+    <% else %>
+        <%= link_to("履修を外す","/courses/#{@lesson.id}/create",{method:"post"}) %>
+    <% end %>
 </div>
 <div class="review">
   <% @post.each do |post| %>
