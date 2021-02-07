@@ -1,24 +1,10 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Uni.
+===
 
-Things you may want to cover:
+Overview
 
-* Ruby version
+##Description
+大学の授業レビューサイト
+授業に対するレビューをしたりレビューを閲覧できる
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
